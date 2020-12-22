@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane id="ma" fx:id="mainScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1500.0" styleClass="mainScene" stylesheets="@CSS/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BattleshipGame.Controller.GameController">
+
+   <children>
+      <VBox fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" styleClass="instruction" stylesheets="@CSS/main.css">
+         <children>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-alignment: CENTER;">
+               <children>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" spacing="27.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="A" textAlignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="B" textAlignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="C" textAlignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="D" textAlignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="E" textAlignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="F" textAlignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="G" textAlignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="H" textAlignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="I" textAlignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="J" textAlignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="5.0" top="-15.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </VBox>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="1.0" minWidth="1.0">
+                     <children>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="1.0" minWidth="1.0" spacing="41.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="7">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="9">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <GridPane fx:id="board1" maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-alignment: CENTER;">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50" minWidth="10.0" prefWidth="50" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50" minWidth="10.0" prefWidth="50" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50" minWidth="10.0" prefWidth="50" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50" minWidth="10.0" prefWidth="50" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50" minWidth="10.0" prefWidth="50" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50" minWidth="10.0" prefWidth="50" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50" minWidth="10.0" prefWidth="50" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50" minWidth="10.0" prefWidth="50" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50" minWidth="10.0" prefWidth="50" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50" minWidth="10.0" prefWidth="50" />
+
+
+
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+
+
+
+
+
+                           </rowConstraints>
+                        </GridPane>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Twoje strzały" textAlignment="CENTER">
+                           <VBox.margin>
+                              <Insets left="200.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" spacing="27.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="A" textAlignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="B" textAlignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="C" textAlignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="D" textAlignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="E" textAlignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="F" textAlignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="G" textAlignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="H" textAlignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="I" textAlignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="J" textAlignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="5.0" top="-15.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </VBox>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="1.0" minWidth="1.0">
+                     <children>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="1.0" minWidth="1.0" spacing="41.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="7">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="9">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <GridPane fx:id="board2" maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-alignment: CENTER;">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50" minWidth="10.0" prefWidth="50" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50" minWidth="10.0" prefWidth="50" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50" minWidth="10.0" prefWidth="50" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50" minWidth="10.0" prefWidth="50" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50" minWidth="10.0" prefWidth="50" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50" minWidth="10.0" prefWidth="50" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50" minWidth="10.0" prefWidth="50" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50" minWidth="10.0" prefWidth="50" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50" minWidth="10.0" prefWidth="50" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50" minWidth="10.0" prefWidth="50" />
+
+
+
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+
+
+
+
+
+                           </rowConstraints>
+                           <padding>
+                              <Insets right="28.0" />
+                           </padding>
+                        </GridPane>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Twoje statki" textAlignment="CENTER">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="200.0" top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" styleClass="instruction" StackPane.alignment="BOTTOM_CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Twoje pozostałe statki:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="8.0" />
+               </HBox.margin>
+            </Text>
+            <Text fx:id="nrYourShips" strokeType="OUTSIDE" strokeWidth="0.0" text="14">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pozostałe statki wroga:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="8.0" left="300.0" />
+               </HBox.margin>
+            </Text>
+            <Text fx:id="nrEnemyShips" strokeType="OUTSIDE" strokeWidth="0.0" text="14">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" styleClass="instruction" StackPane.alignment="TOP_CENTER">
+         <children>
+            <Text fx:id="textTime" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="smile" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/green.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox fx:id="ts" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="200.0" StackPane.alignment="BOTTOM_RIGHT">
+         <children>
+            <Button fx:id="surrenderBtn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#surrender" prefHeight="80.0" prefWidth="200.0" styleClass="instruction" text="PODDAJ SIE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <HBox fx:id="tr" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</StackPane>
