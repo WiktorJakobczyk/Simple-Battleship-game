@@ -117,13 +117,13 @@ public class SetupController {
                     Node target = evt.getPickResult().getIntersectedNode();
                     int colIndex = GridPane.getColumnIndex(target);
                     int rowIndex = GridPane.getRowIndex(target);
-                    System.out.println(colIndex + "\n");
+
 
                     Main.gameMaster.getSetupLogic().orientation(rowIndex, colIndex);
                 }
                 catch(Exception e)
                 {
-                    System.out.println("ERROR");
+                    e.printStackTrace();
                 }
 
             }

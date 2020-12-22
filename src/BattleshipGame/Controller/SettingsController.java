@@ -42,7 +42,7 @@ public class SettingsController {
         }
         catch (IOException e)
         {
-            System.out.println("SETTINGS BACK ERROR");
+            e.printStackTrace();
 
         }
 

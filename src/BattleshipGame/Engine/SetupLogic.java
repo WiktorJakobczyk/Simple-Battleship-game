@@ -132,7 +132,6 @@ public class SetupLogic {
     }
     private void checkNearby(int colIndex, int rowIndex)
     {
-        System.out.println("Shpi: "+length);
 
         for (int i = 0; i < length; i++) {
             if (ship.getOrientation_() == Ship.Orientation_.VERTICAL) {

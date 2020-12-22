@@ -55,7 +55,6 @@ public class MenuController {
             Main.window.getScene().setRoot(root);
         }
         catch (IOException e) {
-            System.out.println("ERROR PLAY");
             e.printStackTrace();
         }
 
@@ -72,7 +71,6 @@ public class MenuController {
         }
         catch (IOException e)
         {
-            System.out.println("ERROR SETTINGS");
             e.printStackTrace();
 
         }

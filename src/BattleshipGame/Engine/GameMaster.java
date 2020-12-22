@@ -164,7 +164,6 @@ public void enemyTurn()
 {
 
     enemy.makeMove();
-    System.out.println("move made");
     analyzeBoard1();
     analyzeBoard2();
 
