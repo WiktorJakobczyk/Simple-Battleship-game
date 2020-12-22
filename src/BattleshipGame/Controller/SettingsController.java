@@ -1,5 +1,6 @@
 package BattleshipGame.Controller;
 
+import BattleshipGame.Engine.GameMaster;
 import BattleshipGame.Main;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -50,7 +51,7 @@ public class SettingsController {
 
     public void soundChange()
     {
-        soundImg.setImage(Main.gameMaster.getSettingsLogic().soundChange(Main.gameMaster.isMusicOn(), Main.gameMaster.getMusic()));
+        soundImg.setImage(Main.gameMaster.getSettingsLogic().soundChange(Main.gameMaster.isMusicOn(), GameMaster.getMusic()));
 
 
 
@@ -59,7 +60,7 @@ public class SettingsController {
 
     public void effectsChange()
     {
-        effectsImg.setImage(Main.gameMaster.getSettingsLogic().soundChange(Main.gameMaster.isEffectOn(), Main.gameMaster.getBum()));
+        effectsImg.setImage(Main.gameMaster.getSettingsLogic().soundChange(Main.gameMaster.isEffectOn(), GameMaster.getBum()));
 
 
     }

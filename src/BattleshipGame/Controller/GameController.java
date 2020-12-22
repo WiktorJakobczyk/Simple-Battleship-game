@@ -74,8 +74,10 @@ public class GameController {
 
         Main.gameMaster.player.shot(colIndex, rowIndex);
         analyzeBoard1();
-        GameMaster.bum.start();
-        GameMaster.bum.reset();
+        if(Main.gameMaster.isEffectOn()) {
+               GameMaster.bum.start();
+               GameMaster.bum.reset();
+        }
 
 
 }
@@ -162,7 +164,10 @@ if(gameAlive)
     private void makeRestart()
     {
         surrenderBtn.setText("RESTART?");
-        addYesNo();
+        yes.setOnMouseClicked(evt -> {
+            restart();
+
+        });
     }
 
     private void DateThread()
@@ -187,9 +192,11 @@ if(gameAlive)
                 }
                 else if(currentState==GAMESTATE.WIN){
                     textTime.setText("YOU WIN");
+                    addYesNo();
                 gameAlive=false;
                     makeRestart();}
                 else if(currentState==GAMESTATE.LOSE){
+                    addYesNo();
                     textTime.setText("YOU LOSE");
                 gameAlive=false;
                     makeRestart();
