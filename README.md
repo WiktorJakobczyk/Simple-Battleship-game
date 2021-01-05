@@ -21,3 +21,9 @@ Red squares represent placed ship while orange ones are just a preview. Purple c
 <img src="https://user-images.githubusercontent.com/57060628/102930636-1fdc0800-449d-11eb-86e4-1fa964bc3368.png" width="60%" height="auto" />
 Left board is a board where user, during they turn, can choose a target for their next move. The yellow colour is a miss, green means hit.
 The right board shows the user's ships and opponent’s moves.
+
+<br/>
+<br/>
+Sources: <br/>
+https://www.cleanpng.com/png-battleship-board-game-the-game-of-life-logo-game-l-1185795/ <br/>
+https://opengameart.org/content/sea-warfare-set-ships-and-more
