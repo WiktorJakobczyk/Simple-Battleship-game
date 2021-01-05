@@ -15,11 +15,11 @@ It's well known battleships game made with Java FX technology.
 
 2. SetUp
 <img src="https://user-images.githubusercontent.com/57060628/102931778-4a2ec500-449f-11eb-8892-b6325b0a5e0e.png" width="60%" height="auto" />
-Red squares represent placed ship while orange ones are just a preview. Purple color means that placing ship in specific place is not allowed.
+Red squares represent placed ship while orange ones are just a preview. Purple colour means that placing a ship in a specific place is not allowed.
 
 3. Play
 <img src="https://user-images.githubusercontent.com/57060628/102930636-1fdc0800-449d-11eb-86e4-1fa964bc3368.png" width="60%" height="auto" />
-Left board is a board where user, during they turn, can choose a target for their next move. The yellow colour is a miss, green means hit.
+The left board is a board where user, during they turn, can choose a target for their next move. The yellow colour is a miss, green means hit.
 The right board shows the user's ships and opponent’s moves.
 
 <br/>
